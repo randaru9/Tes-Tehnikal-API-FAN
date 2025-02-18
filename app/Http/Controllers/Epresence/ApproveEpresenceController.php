@@ -21,7 +21,7 @@ class ApproveEpresenceController extends Controller
         ] = $request;
             
 
-        $response = new Response(Response::CREATED, 'Approve Presensi Berhasil');
+        $response = new Response(Response::OK, 'Approve Presensi Berhasil');
         $epresence = Epresence::with('user')->find($epresence_id);
         $supervisor = User::firstWhere('id', auth(guard: 'api')->id());
         DB::beginTransaction();

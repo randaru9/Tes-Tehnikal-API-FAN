@@ -12,7 +12,8 @@ Pastikan Anda telah menginstal:
 
 1. Clone repository ini:
    ```sh
-   https://github.com/randaru9/Tes-Tehnikal-API-FAN.git
+   git clone https://github.com/randaru9/Tes-Tehnikal-API-FAN.git
+   cd  Tes-Tehnikal-API-FAN/
    ```
 
 2. Install dependency Laravel:

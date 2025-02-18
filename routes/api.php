@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Epresence\ApproveEpresenceController;
 use App\Http\Controllers\Epresence\CreateEpresenceController;
 use Illuminate\Support\Facades\Route;
 
@@ -10,4 +11,5 @@ Route::prefix('auth')->group(function () {
 
 Route::prefix('epresence')->middleware('jwt')->group(function () {
     Route::post('create', [CreateEpresenceController::class, 'action'] );
+    Route::put('approve', [ApproveEpresenceController::class, 'action'] );
 });

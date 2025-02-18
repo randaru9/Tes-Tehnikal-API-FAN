@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Epresence extends Model
 {
@@ -24,4 +25,9 @@ class Epresence extends Model
     ];
     public const OUT = 'OUT';
     public const IN = 'IN';
+
+    public function user() : BelongsTo
+    {
+        return $this->belongsTo(User::class, 'id_users');
+    }
 }

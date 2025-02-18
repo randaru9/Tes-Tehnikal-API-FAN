@@ -22,12 +22,11 @@ class ApproveEpresenceController extends Controller
             
 
         $response = new Response(Response::CREATED, 'Approve Presensi Berhasil');
-        $epresence = Epresence::firstWhere('id', $epresence_id);
+        $epresence = Epresence::with('user')->find($epresence_id);
         $supervisor = User::firstWhere('id', auth(guard: 'api')->id());
-        
         DB::beginTransaction();
         
-        if($epresence->npp_supervisor == $supervisor->npp) {
+        if($epresence->user->npp_supervisor == $supervisor->npp) {
             try {
 
                 $epresence->is_approve = true;

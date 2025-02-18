@@ -80,6 +80,7 @@ Pastikan Anda telah menginstal:
     }
    ```
    Screenshot:
+   ![postman login](/Screenshot/Login.jpeg)
 
 2. Insert Data
    \
@@ -97,6 +98,7 @@ Pastikan Anda telah menginstal:
     "data": []
    ```
    Screenshot:
+   ![postman insert data](/Screenshot/Insert%20Data.jpeg)
    
 3. Approve Data
    \
@@ -114,8 +116,9 @@ Pastikan Anda telah menginstal:
     "data": []
    ```
    Screenshot:
+   ![postman approve data](/Screenshot/Approve%20Data.jpeg)
 
-4. Get Data
+5. Get Data
    \
    Request :
    ```sh
@@ -149,4 +152,5 @@ Pastikan Anda telah menginstal:
     ]
    ```
    Screenshot:
+   ![postman get data](/Screenshot/Get%20Data.jpeg)
    

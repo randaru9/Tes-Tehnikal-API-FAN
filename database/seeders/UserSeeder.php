@@ -14,18 +14,18 @@ class UserSeeder extends Seeder
     {
         $data = [
             [
-                'name' => 'Supervisor',
-                'email' => 'spv@email.com',
-                'password' => 'spv12345',
-                'npp' => '11111',
-                'npp_supervisor' => null,
-            ],
-            [
                 'name' => 'Ananda Bayu',
                 'email' => 'bayu@email.com',
                 'password' => 'bayu1234',
                 'npp' => '12345',
                 'npp_supervisor' => '11111',
+            ],
+            [
+                'name' => 'Supervisor',
+                'email' => 'spv@email.com',
+                'password' => 'spv12345',
+                'npp' => '11111',
+                'npp_supervisor' => null,
             ],
         ];
 
